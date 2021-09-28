@@ -1,3 +1,5 @@
+
+// Exercise 2 part 1
 document.getElementById("input-names").addEventListener("click", greetNames);
 
 function greetNames(){
@@ -5,12 +7,15 @@ function greetNames(){
     const name2 = window.prompt("Enter the name of the second of your friends");
     const name3 = window.prompt("Enter the name of the third of your friends");
     
-    window.alert("Welcome " + name1 + ", " + name2 + ", " + name3 + "." );
+    // window.alert("Welcome " + name1 + ", " + name2 + ", " + name3 + "." );
+    window.alert(`Welcome ${name1}, ${name2}, ${name3}!`);
 };
 
+// Exercise 2 part 2
 document.getElementById("calculate-age").addEventListener("click", (e) => {
     const birthYear = window.prompt("Which year were you born?");
-    window.alert("Your age is " + calculateAge(birthYear));
+    // window.alert("Your age is " + calculateAge(birthYear));
+    window.alert(`Your age is ${calculateAge(birthYear)}`);
 });
 
 function calculateAge(birthYear){
@@ -19,6 +24,7 @@ function calculateAge(birthYear){
     return age;
 }
     
+// Exercise 2 part 3
 document.getElementById("greet-name-age").addEventListener("click", (e) => {
     const fren1 = window.prompt("Enter the name of the first of your friends");
     const birthYear1 = window.prompt("Which year was " + fren1 + " born?");
@@ -33,5 +39,7 @@ document.getElementById("greet-name-age").addEventListener("click", (e) => {
     const birthYear3 = window.prompt("Which year was " + fren3 + " born?");
     const age3 = calculateAge(birthYear3);
 
-    window.alert("Welcome " + fren1 + ", you are " + age1 + " years old. Welcome "  + fren2 + ", you are " + age2 + " years old.  Welcome "  + fren3 + ", you are " + age3 + " years old."  );
+    // window.alert("Welcome " + fren1 + ", you are " + age1 + " years old. Welcome "  + fren2 + ", you are " + age2 + " years old.  Welcome "  + fren3 + ", you are " + age3 + " years old."  );
+    window.alert(`Welcome ${fren1}, you are ${age1} years old. Welcome ${fren2}, you are ${age2} years old. Welcome ${fren3}, you are ${age3} years old.`);
+
 });
